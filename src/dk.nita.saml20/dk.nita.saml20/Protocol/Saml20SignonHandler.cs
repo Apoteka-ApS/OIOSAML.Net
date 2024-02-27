@@ -577,10 +577,13 @@ namespace dk.nita.saml20.protocol
         /// <returns>True if valid, otherwise false.</returns>
         private bool ValidateLoA(HttpContext context, Saml20Assertion assertion, XmlElement assertionXml)
         {
+            // This is a temporary(?) hack, to work around the fact that we currently don't receive LoA attributes in the Assertions from SEB/MitId
+            //return true;
+
             // If AssuranceLevel is allowed, and it's present in assertion, validate.
             var allowAL = SAML20FederationConfig.GetConfig().AllowAssuranceLevel;
             var assertionAL = GetAssuranceLevel(assertion);
-            if(allowAL && assertionAL != null)
+            if (allowAL && assertionAL != null)
             {
                 return ValidateAssuranceLevel(assertionAL, context, assertionXml);
             }

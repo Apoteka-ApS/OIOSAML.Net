@@ -10,13 +10,13 @@ namespace dk.nita.saml20.config
     /// Common implementation of X509 certificate references used in configuration files. 
     /// Specializations are free to provide the xml namespace that fit the best (ie the namespace of the containing element)
     /// </summary>
-    public class Certificate 
+    public class Certificate
     {
         /// <summary>
         /// Opens the certificate from its store.
         /// </summary>
         /// <returns></returns>
-        public X509Certificate2 GetCertificate()
+        public virtual X509Certificate2 GetCertificate()
         {            
             var store = new X509Store( storeName, storeLocation);
             try
@@ -45,7 +45,7 @@ namespace dk.nita.saml20.config
         /// Opens the certificate from its store.
         /// </summary>
         /// <returns></returns>
-        public X509Certificate2 GetFirstValidX509Certificate()
+        public virtual X509Certificate2 GetFirstValidX509Certificate()
         {
             var store = new X509Store(storeName, storeLocation);
             try
@@ -69,7 +69,7 @@ namespace dk.nita.saml20.config
         /// Opens the certificate from its store.
         /// </summary>
         /// <returns></returns>
-        public X509Certificate2Collection GetAllValidX509Certificates()
+        public virtual X509Certificate2Collection GetAllValidX509Certificates()
         {
             var store = new X509Store(storeName, storeLocation);
             try

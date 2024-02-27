@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityProviderDemo", "IdentityProviderDemo\IdentityProviderDemo.csproj", "{83B75533-8D8E-4470-960E-B575E49393A1}"
 EndProject
@@ -15,7 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dk.nita.saml20.ext.audit.lo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dk.nita.saml20.ext.sessionstore.sqlserver", "dk.nita.saml20.ext.sessionstore.sqlserver\dk.nita.saml20.ext.sessionstore.sqlserver.csproj", "{38CEE6DC-0D71-44FA-815F-E38035BDC345}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTest", "IntegrationTest\IntegrationTest.csproj", "{645D93C7-A134-45B7-827E-0B6CDF58769C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegrationTest", "IntegrationTest\IntegrationTest.csproj", "{645D93C7-A134-45B7-827E-0B6CDF58769C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApotekaDemo", "ApotekaDemo\ApotekaDemo.csproj", "{81C1E7B1-FE53-4116-B58F-9A9D66818A92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -108,8 +110,23 @@ Global
 		{645D93C7-A134-45B7-827E-0B6CDF58769C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{645D93C7-A134-45B7-827E-0B6CDF58769C}.Release|x64.ActiveCfg = Release|Any CPU
 		{645D93C7-A134-45B7-827E-0B6CDF58769C}.Release|x64.Build.0 = Release|Any CPU
+		{81C1E7B1-FE53-4116-B58F-9A9D66818A92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81C1E7B1-FE53-4116-B58F-9A9D66818A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81C1E7B1-FE53-4116-B58F-9A9D66818A92}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{81C1E7B1-FE53-4116-B58F-9A9D66818A92}.Debug|x64.Build.0 = Debug|Any CPU
+		{81C1E7B1-FE53-4116-B58F-9A9D66818A92}.MSI|Any CPU.ActiveCfg = Debug|Any CPU
+		{81C1E7B1-FE53-4116-B58F-9A9D66818A92}.MSI|Any CPU.Build.0 = Debug|Any CPU
+		{81C1E7B1-FE53-4116-B58F-9A9D66818A92}.MSI|x64.ActiveCfg = Debug|Any CPU
+		{81C1E7B1-FE53-4116-B58F-9A9D66818A92}.MSI|x64.Build.0 = Debug|Any CPU
+		{81C1E7B1-FE53-4116-B58F-9A9D66818A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81C1E7B1-FE53-4116-B58F-9A9D66818A92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81C1E7B1-FE53-4116-B58F-9A9D66818A92}.Release|x64.ActiveCfg = Release|Any CPU
+		{81C1E7B1-FE53-4116-B58F-9A9D66818A92}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0BF60EC-BC64-437C-A6FC-D472C7709649}
 	EndGlobalSection
 EndGlobal

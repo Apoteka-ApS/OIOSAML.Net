@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Web;
+using System.Web.Routing;
 using System.Web.Security;
 using dk.nita.saml20.Utils;
 using dk.nita.saml20.identity;
@@ -15,7 +16,7 @@ namespace WebsiteDemo
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            
+            //RouteTable.Routes.MapPageRoute("PrescriptionIDPLogin", "Prescription/IDPLogin", "~/Prescription/IDPLogin.ashx");
         }
 
         protected void Session_Start(object sender, EventArgs e)
